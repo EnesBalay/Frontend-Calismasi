@@ -1,22 +1,352 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Quiz App</title>
+    <title>Collers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="library/bootstrap/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
     />
+
+    <link href="library/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <h1>Hello, Baykar!</h1>
-    <script
-      src="library/bootstrap/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <header>
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+          <a class="navbar-brand"><h5 class="heading-5">Collers</h5></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-primary sign-up" type="submit">
+              Sign up now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="slider-section">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-7">
+              <h1 class="heading-1">Collectible Sneakers</h1>
+              <p class="my-4">
+                Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
+                suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
+                ultrices amet.
+              </p>
+              <div class="carousel-buttons">
+                <button class="btn btn-outline-primary sign-up" type="submit">
+                  Sign up now
+                </button>
+                <button class="btn watch-video" type="submit">
+                  <img
+                    class="me-2"
+                    src="assets/svg/watch-video.svg"
+                    alt="watch video icon"
+                  />
+                  Watch Demo
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 position-relative text-end">
+              <img
+                class="img-fluid z-0"
+                src="assets/svg/shoe-bg.svg"
+                alt="shoe"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="content-box-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="content-box">
+                <div class="icon position-relative">
+                  <img
+                    class="position-absolute"
+                    style="padding: 0 1.7rem"
+                    src="assets/svg/down-triangle-blue.svg"
+                  />
+                  <img src="assets/svg/trophy.svg" alt="" />
+                </div>
+                <div class="subtitle-xl my-3">Nibh viverra</div>
+                <p>
+                  Sit bibendum donec dolor fames neque vulputate non sit
+                  aliquam. Consequat turpis natoque leo, massa.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content-box">
+                <div class="icon position-relative">
+                  <img
+                    class="position-absolute"
+                    style="padding: 0 1.5rem"
+                    src="assets/svg/right-triangle-green.svg"
+                  />
+                  <img src="assets/svg/tunnel.svg" alt="" />
+                </div>
+                <div class="subtitle-xl my-3">Cursus amet</div>
+                <p>
+                  Sit bibendum donec dolor fames neque vulputate non sit
+                  aliquam. Consequat turpis natoque leo, massa.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content-box">
+                <div class="icon position-relative">
+                  <img
+                    class="position-absolute"
+                    style="padding: 0 2.5rem"
+                    src="assets/svg/round-purple.svg"
+                  />
+                  <img src="assets/svg/tv.svg" alt="" />
+                </div>
+                <div class="subtitle-xl my-3">Ipsum fermentum</div>
+                <p>
+                  Sit bibendum donec dolor fames neque vulputate non sit
+                  aliquam. Consequat turpis natoque leo, massa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="the-best-section" class="section-dark-blue">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-9">
+              <h2 class="heading-2">The best of the best</h2>
+            </div>
+            <div class="col-lg-3 text-end">
+              <button class="btn btn-outline-white sign-up" type="submit">
+                Sign up now
+              </button>
+            </div>
+          </div>
+          <div
+            class="row mt-5"
+            style="
+              background-image: url(assets/svg/backlights.svg);
+              background-size: cover;
+            "
+          >
+            <div class="col-4">
+              <div class="card border-0">
+                <div
+                  class="card-image"
+                  style="
+                    background-image: url(assets/images/best-of-best-1.jpg);
+                  "
+                ></div>
+                <div class="card-body">
+                  <div class="content">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">
+                      Egestas elit dui scelerisque ut eu purus aliquam vitae
+                      habitasse.
+                    </p>
+                  </div>
+                  <div class="buy-now">
+                    <button class="btn btn-outline-white w-100">
+                      <img
+                        class="me-2"
+                        src="assets/svg/buy-now.svg"
+                        alt="buy product icon"
+                      />
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <div
+                  class="card-image"
+                  style="
+                    background-image: url(assets/images/best-of-best-1.jpg);
+                  "
+                ></div>
+                <div class="card-body">
+                  <div class="content">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">
+                      Egestas elit dui scelerisque ut eu purus aliquam vitae
+                      habitasse.
+                    </p>
+                  </div>
+                  <div class="buy-now">
+                    <button class="btn btn-outline-white w-100">
+                      <img
+                        class="me-2"
+                        src="assets/svg/buy-now.svg"
+                        alt="buy product icon"
+                      />
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <div
+                  class="card-image"
+                  style="
+                    background-image: url(assets/images/best-of-best-1.jpg);
+                  "
+                ></div>
+                <div class="card-body">
+                  <div class="content">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">
+                      Egestas elit dui scelerisque ut eu purus aliquam vitae
+                      habitasse.
+                    </p>
+                  </div>
+                  <div class="buy-now">
+                    <button class="btn btn-outline-white w-100">
+                      <img
+                        class="me-2"
+                        src="assets/svg/buy-now.svg"
+                        alt="buy product icon"
+                      />
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col-lg-3">
+            <div class="footer-links">
+              <ul>
+                <li><a href="#" class="title">Product</a></li>
+                <li><a href="#" class="link">Pricing</a></li>
+                <li><a href="#" class="link">Overview</a></li>
+                <li><a href="#" class="link">Browse</a></li>
+                <li><a href="#" class="link">Accessibility</a></li>
+                <li><a href="#" class="link">Five</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-links">
+              <ul>
+                <li><a href="#" class="title">Solutions</a></li>
+                <li><a href="#" class="link">Brainstorming</a></li>
+                <li><a href="#" class="link">Ideation</a></li>
+                <li><a href="#" class="link">Wireframing</a></li>
+                <li><a href="#" class="link">Research</a></li>
+                <li><a href="#" class="link">Design</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-links">
+              <ul>
+                <li><a href="#" class="title">Support</a></li>
+                <li><a href="#" class="link">Contact Us</a></li>
+                <li><a href="#" class="link">Developers</a></li>
+                <li><a href="#" class="link">Documentation</a></li>
+                <li><a href="#" class="link">Integrations</a></li>
+                <li><a href="#" class="link">Reports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="footer-links d-flex flex-column justify-content-between"
+            >
+              <ul>
+                <li><a href="#" class="title">Get The App</a></li>
+                <li>
+                  <img
+                    src="assets/svg/download-app-store.svg"
+                    alt="app store download image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="assets/svg/download-google-play.svg"
+                    alt="app store download image"
+                  />
+                </li>
+              </ul>
+              <div class="social-media-links">
+                <ul>
+                  <li>
+                    <span class="link">Follow Us</span>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <a href="#" class="social-link col-2">
+                        <img src="assets/svg/youtube.svg" alt="" />
+                      </a>
+                      <a href="#" class="social-link col-2">
+                        <img src="assets/svg/facebook.svg" alt="" />
+                      </a>
+                      <a href="#" class="social-link col-2">
+                        <img src="assets/svg/twitter.svg" alt="" />
+                      </a>
+                      <a href="#" class="social-link col-2">
+                        <img src="assets/svg/instagram.svg" alt="" />
+                      </a>
+                      <a href="#" class="social-link col-2">
+                        <img src="assets/svg/linkedin.svg" alt="" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="library/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
