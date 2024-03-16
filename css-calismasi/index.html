@@ -13,6 +13,7 @@
     />
 
     <link href="library/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="library/slick/slick.css" />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
@@ -29,7 +30,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src="./assets/svg/iconoir/menu-scale.svg" alt="" srcset="">
           </button>
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -49,7 +50,10 @@
                 <a class="nav-link" href="#">Log In</a>
               </li>
             </ul>
-            <button class="btn btn-outline-primary sign-up" type="submit">
+            <button
+              class="btn btn-outline-primary button-m sign-up"
+              type="submit"
+            >
               Sign up now
             </button>
           </div>
@@ -57,120 +61,122 @@
       </nav>
     </header>
     <main>
-      <section id="slider-section">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-lg-7">
-              <h1 class="heading-1">Collectible Sneakers</h1>
-              <p class="my-4">
-                Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
-                suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
-                ultrices amet.
-              </p>
-              <div class="carousel-buttons">
-                <button class="btn btn-outline-primary sign-up" type="submit">
-                  Sign up now
-                </button>
-                <button class="btn watch-video" type="submit">
-                  <img
-                    class="me-2"
-                    src="assets/svg/watch-video.svg"
-                    alt="watch video icon"
-                  />
-                  Watch Demo
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-4 position-relative text-end">
-              <img
-                class="img-fluid z-0"
-                src="assets/svg/shoe-bg.svg"
-                alt="shoe"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="content-box-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="content-box">
-                <div class="icon position-relative">
-                  <img
-                    class="position-absolute"
-                    style="padding: 0 1.7rem"
-                    src="assets/svg/down-triangle-blue.svg"
-                  />
-                  <img src="assets/svg/trophy.svg" alt="" />
-                </div>
-                <div class="subtitle-xl my-3">Nibh viverra</div>
-                <p>
-                  Sit bibendum donec dolor fames neque vulputate non sit
-                  aliquam. Consequat turpis natoque leo, massa.
+      <div class="top-section">
+        <section class="carousel-section">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="heading-1">Collectible Sneakers</h1>
+                <p class="my-4">
+                  Sit elit feugiat turpis sed integer integer accumsan turpis.
+                  Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
+                  ultrices amet.
                 </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="content-box">
-                <div class="icon position-relative">
-                  <img
-                    class="position-absolute"
-                    style="padding: 0 1.5rem"
-                    src="assets/svg/right-triangle-green.svg"
-                  />
-                  <img src="assets/svg/tunnel.svg" alt="" />
+                <div class="carousel-buttons">
+                  <button
+                    class="btn btn-outline-primary button-l sign-up"
+                    type="submit"
+                  >
+                    Sign up now
+                  </button>
+                  <button class="btn button-m watch-video" type="submit">
+                    <img
+                      class="me-2"
+                      src="assets/svg/jam-icons/play-circle.svg"
+                      alt="watch video icon"
+                    />
+                    Watch Demo
+                  </button>
                 </div>
-                <div class="subtitle-xl my-3">Cursus amet</div>
-                <p>
-                  Sit bibendum donec dolor fames neque vulputate non sit
-                  aliquam. Consequat turpis natoque leo, massa.
-                </p>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="content-box">
-                <div class="icon position-relative">
-                  <img
-                    class="position-absolute"
-                    style="padding: 0 2.5rem"
-                    src="assets/svg/round-purple.svg"
-                  />
-                  <img src="assets/svg/tv.svg" alt="" />
-                </div>
-                <div class="subtitle-xl my-3">Ipsum fermentum</div>
-                <p>
-                  Sit bibendum donec dolor fames neque vulputate non sit
-                  aliquam. Consequat turpis natoque leo, massa.
-                </p>
+              <div class="col-lg-5 position-relative text-end mt-5 mt-lg-0">
+                <img
+                  class="img-fluid z-0"
+                  src="assets/svg/shoe-bg.svg"
+                  alt="shoe"
+                />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="the-best-section" class="section-dark-blue">
+        </section>
+        <section class="content-box-section text-center text-lg-start">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="content-box">
+                  <div class="icon position-relative">
+                    <img
+                      class="position-absolute"
+                      style="padding: 0 1.7rem"
+                      src="assets/svg/down-triangle-blue.svg"
+                    />
+                    <img src="assets/svg/iconoir/trophy.svg" alt="" />
+                  </div>
+                  <div class="subtitle-xl my-3">Nibh viverra</div>
+                  <p>
+                    Sit bibendum donec dolor fames neque vulputate non sit
+                    aliquam. Consequat turpis natoque leo, massa.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content-box">
+                  <div class="icon position-relative">
+                    <img
+                      class="position-absolute"
+                      style="padding: 0 1.5rem"
+                      src="assets/svg/right-triangle-green.svg"
+                    />
+                    <img src="assets/svg/iconoir/tunnel.svg" alt="" />
+                  </div>
+                  <div class="subtitle-xl my-3">Cursus amet</div>
+                  <p>
+                    Sit bibendum donec dolor fames neque vulputate non sit
+                    aliquam. Consequat turpis natoque leo, massa.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content-box">
+                  <div class="icon position-relative">
+                    <img
+                      class="position-absolute"
+                      style="padding: 0 2.5rem"
+                      src="assets/svg/round-purple.svg"
+                    />
+                    <img src="assets/svg/iconoir/tv.svg" alt="" />
+                  </div>
+                  <div class="subtitle-xl my-3">Ipsum fermentum</div>
+                  <p>
+                    Sit bibendum donec dolor fames neque vulputate non sit
+                    aliquam. Consequat turpis natoque leo, massa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section
+        class="the-best-section section-dark-blue"
+        style="background-image: url(assets/svg/backlights.svg)"
+      >
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-9">
+          <div class="row align-items-center text-white text-center">
+            <div class="col-lg-8 mb-4 mb-lg-0 text-lg-start">
               <h2 class="heading-2">The best of the best</h2>
             </div>
-            <div class="col-lg-3 text-end">
+            <div class="col-lg-4 text-lg-end">
               <button class="btn btn-outline-white sign-up" type="submit">
                 Sign up now
               </button>
             </div>
           </div>
-          <div
-            class="row mt-5"
-            style="
-              background-image: url(assets/svg/backlights.svg);
-              background-size: cover;
-            "
-          >
-            <div class="col-4">
-              <div class="card border-0">
+          <div class="row mt-5">
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="card rounded">
                 <div
-                  class="card-image"
+                  class="card-image rounded-top"
                   style="
                     background-image: url(assets/images/best-of-best-1.jpg);
                   "
@@ -185,23 +191,18 @@
                   </div>
                   <div class="buy-now">
                     <button class="btn btn-outline-white w-100">
-                      <img
-                        class="me-2"
-                        src="assets/svg/buy-now.svg"
-                        alt="buy product icon"
-                      />
-                      Buy Now
+                      <span>Buy Now</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-4">
-              <div class="card border-0">
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="card">
                 <div
-                  class="card-image"
+                  class="card-image rounded-top"
                   style="
-                    background-image: url(assets/images/best-of-best-1.jpg);
+                    background-image: url(assets/images/best-of-best-2.jpg);
                   "
                 ></div>
                 <div class="card-body">
@@ -214,23 +215,18 @@
                   </div>
                   <div class="buy-now">
                     <button class="btn btn-outline-white w-100">
-                      <img
-                        class="me-2"
-                        src="assets/svg/buy-now.svg"
-                        alt="buy product icon"
-                      />
-                      Buy Now
+                      <span>Buy Now</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-4">
-              <div class="card border-0">
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="card">
                 <div
-                  class="card-image"
+                  class="card-image rounded-top"
                   style="
-                    background-image: url(assets/images/best-of-best-1.jpg);
+                    background-image: url(assets/images/best-of-best-3.jpg);
                   "
                 ></div>
                 <div class="card-body">
@@ -243,12 +239,7 @@
                   </div>
                   <div class="buy-now">
                     <button class="btn btn-outline-white w-100">
-                      <img
-                        class="me-2"
-                        src="assets/svg/buy-now.svg"
-                        alt="buy product icon"
-                      />
-                      Buy Now
+                      <span>Buy Now</span>
                     </button>
                   </div>
                 </div>
@@ -257,9 +248,256 @@
           </div>
         </div>
       </section>
+      <section class="why-join-us position-relative">
+        <div class="container py-5 position-relative">
+          <div class="row my-5 py-4 align-items-center bg-white">
+            <div
+              class="col-lg-6 position-relative z-2 text-center text-lg-start"
+            >
+              <h2 class="heading-2">Why join us</h2>
+              <ul class="my-4 text-xl">
+                <li>Est et in pharetra magna adipiscing ornare aliquam.</li>
+                <li>Tellus arcu sed consequat ac velit ut eu blandit.</li>
+                <li>Ullamcorper ornare in et egestas dolor orci.</li>
+              </ul>
+              <button
+                class="btn btn-outline-primary button-l sign-up mb-4 mb-lg-0"
+              >
+                Sign up now
+              </button>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img
+                class="position-relative z-2 img-fluid"
+                src="./assets/svg/why-join-us.svg"
+                alt="why join us"
+              />
+              <img
+                class="why-bg position-absolute img-fluid"
+                src="./assets/svg/why-join-us-bg.svg"
+                alt="why join us"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="because-section">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-9">
+              <h2 class="heading-2 text-center text-lg-start">
+                Because they love us
+              </h2>
+            </div>
+            <div class="buttons d-none d-lg-flex">
+              <button class="btn btn-outline-primary left-button"></button>
+              <button class="btn btn-outline-primary right-button"></button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid w-100 position relative">
+          <div class="row">
+            <div class="comments-slider position-relative z-1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="content">
+                    <img
+                      src="assets/svg/logos/zoomerr.svg"
+                      class="card-title"
+                    />
+                    <p class="card-text text-xxl my-4">
+                      Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                      tellus, viverra turpis lorem. Varius a turpis urna id
+                      porttitor.
+                    </p>
+                  </div>
+                  <div class="user d-flex align-items-center">
+                    <div
+                      class="user-photo"
+                      style="
+                        background-image: url('assets/images/user-hellen.jpg');
+                      "
+                    ></div>
+                    <div class="user-info mx-3">
+                      <div class="name text-l">Hellen Jummy</div>
+                      <div class="title">Team Lead</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="content">
+                    <img src="assets/svg/logos/shells.svg" class="card-title" />
+                    <p class="card-text text-xxl my-4">
+                      Aliquet ridiculus mi porta habitant vulputate rhoncus,
+                      mattis amet enim. Sit purus venenatis velit semper lectus
+                      sed ornare quam nulla.
+                    </p>
+                  </div>
+                  <div class="user d-flex align-items-center">
+                    <div
+                      class="user-photo"
+                      style="
+                        background-image: url('assets/images/user-hellena.jpg');
+                      "
+                    ></div>
+                    <div class="user-info mx-3">
+                      <div class="name text-l">Hellena John</div>
+                      <div class="title">Co-founder</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="content">
+                    <img
+                      src="assets/svg/logos/art-venue.svg"
+                      class="card-title"
+                    />
+                    <p class="card-text text-xxl my-4">
+                      A eget sed posuere dui risus habitasse mauris. Venenatis
+                      aliquet id ultrices a lacus. Pretium vehicula pretium
+                      posuere justo sed.
+                    </p>
+                  </div>
+                  <div class="user d-flex align-items-center">
+                    <div
+                      class="user-photo"
+                      style="
+                        background-image: url('assets/images/user-david.jpg');
+                      "
+                    ></div>
+                    <div class="user-info mx-3">
+                      <div class="name text-l">David Oshodi</div>
+                      <div class="title">Manager</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="content">
+                    <img src="assets/svg/logos/waves.svg" class="card-title" />
+                    <p class="card-text text-xxl my-4">
+                      Magna egestas aliquet ut integer non. Sed diam enim nibh
+                      sit. Aliquam laoreet aenean metus nibh eu scelerisque.
+                    </p>
+                  </div>
+                  <div class="user d-flex align-items-center">
+                    <div
+                      class="user-photo"
+                      style="
+                        background-image: url('assets/images/user-charolette.jpg');
+                      "
+                    ></div>
+                    <div class="user-info mx-3">
+                      <div class="name text-l">Charolette Hanlin</div>
+                      <div class="title">CEO</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grow-collection">
+        <div class="container">
+          <div class="row text-center text-lg-start">
+            <h2 class="heading-2">Grow your collection</h2>
+            <p class="mt-4">
+              Enim neque massa porta adipiscing elit. Sem libero id faucibus
+              nibh amet dictum pellentesque sed. Eu non turpis risus odio
+              sapien, fames sit rhoncus.<br />
+              Nec magna sed interdum sit purus tellus. Et volutpat proin neque
+              placerat at bibendum quam tellus.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-xl-3">
+              <div class="grow-buttons">
+                <button class="btn button-l active">
+                  <span class="mx-2 d-flex justify-content-center">
+                    <img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/search.svg"
+                      alt=""
+                    />
+                    Bibendum tellus</span
+                  >
+                </button>
+                <button class="btn button-l">
+                  <span class="mx-2 d-flex justify-content-center">
+                    <img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/shield-check.svg"
+                      alt=""
+                    />
+                    Cras Eget</span
+                  >
+                </button>
+                <button class="btn button-l">
+                  <span class="mx-2 d-flex justify-content-center"
+                    ><img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/rocket.svg"
+                      alt=""
+                    />
+                    Dolor pharetra</span
+                  >
+                </button>
+                <button class="btn button-l">
+                  <span class="mx-2 d-flex justify-content-center"
+                    ><img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/screen.svg"
+                      alt=""
+                    />
+                    Amet, fringilla</span
+                  >
+                </button>
+                <button class="btn button-l">
+                  <span class="mx-2 d-flex justify-content-center"
+                    ><img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/podcast.svg"
+                      alt=""
+                    />
+                    Amet nibh</span
+                  >
+                </button>
+                <button class="btn button-l">
+                  <span class="mx-2 d-flex justify-content-center">
+                    <img
+                      class="me-3"
+                      src="./assets/svg/jam-icons/settings-alt.svg"
+                      alt=""
+                    />
+                    Sed velit</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <img class="img-fluid" src="./assets/svg/grow-collection.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="world-shoes-section"
+        style="background-image: url(./assets/svg/world-shoes.svg)"
+      >
+        <div class="shoes-text-section text-center text-white">
+          <h1 class="heading-1L">11,658,467</h1>
+          <h2 class="heading-2">Shoes Collected</h2>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container text-white text-center text-lg-start">
         <div class="row footer-top">
           <div class="col-lg-3">
             <div class="footer-links">
@@ -299,7 +537,7 @@
           </div>
           <div class="col-lg-3">
             <div
-              class="footer-links d-flex flex-column justify-content-between"
+              class="footer-links d-flex flex-column justify-content-between mb-0"
             >
               <ul>
                 <li><a href="#" class="title">Get The App</a></li>
@@ -322,21 +560,23 @@
                     <span class="link">Follow Us</span>
                   </li>
                   <li>
-                    <div class="row">
-                      <a href="#" class="social-link col-2">
-                        <img src="assets/svg/youtube.svg" alt="" />
+                    <div
+                      class="row justify-content-center justify-content-lg-start"
+                    >
+                      <a href="#" class="social-link col-1 col-lg-2 me-1">
+                        <img src="assets/svg/jam-icons/youtube.svg" alt="" />
                       </a>
-                      <a href="#" class="social-link col-2">
-                        <img src="assets/svg/facebook.svg" alt="" />
+                      <a href="#" class="social-link col-1 col-lg-2 me-1">
+                        <img src="assets/svg/jam-icons/facebook.svg" alt="" />
                       </a>
-                      <a href="#" class="social-link col-2">
-                        <img src="assets/svg/twitter.svg" alt="" />
+                      <a href="#" class="social-link col-1 col-lg-2 me-1">
+                        <img src="assets/svg/jam-icons/twitter.svg" alt="" />
                       </a>
-                      <a href="#" class="social-link col-2">
-                        <img src="assets/svg/instagram.svg" alt="" />
+                      <a href="#" class="social-link col-1 col-lg-2 me-1">
+                        <img src="assets/svg/jam-icons/instagram.svg" alt="" />
                       </a>
-                      <a href="#" class="social-link col-2">
-                        <img src="assets/svg/linkedin.svg" alt="" />
+                      <a href="#" class="social-link col-1 col-lg-2 me-1">
+                        <img src="assets/svg/jam-icons/linkedin.svg" alt="" />
                       </a>
                     </div>
                   </li>
@@ -345,8 +585,48 @@
             </div>
           </div>
         </div>
+        <div class="row footer-bottom">
+          <div class="col-12 col-lg p-0 mb-4 mb-lg-0">
+            <p>Collers @ 2023. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-lg p-0">
+            <div class="footer-links text-center text-lg-end">
+              <a href="#" class="link m-0">Terms</a>
+              <a href="#" class="link">Privacy</a>
+              <a href="#" class="link">Contact</a>
+              <a href="#" class="link"
+                ><img src="./assets/svg/jam-icons/world.svg" />
+                <span style="margin-left: 5px">EN</span></a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="library/jquery/jquery-3.7.1.min.js"></script>
     <script src="library/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="library/slick/slick.min.js"></script>
+
+    <script>
+      $(".comments-slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // arrows: false,
+        prevArrow: $(".left-button"),
+        nextArrow: $(".right-button"),
+        centerMode: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+            },
+            variableWidth: false,
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
